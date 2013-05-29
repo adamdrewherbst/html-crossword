@@ -1,0 +1,75 @@
+body {
+	background-color: #66FF66;
+}
+
+#message_panel {
+	position: absolute;
+	width: 100%;
+	margin-top: 100px;
+	text-align: center;
+	z-index: -1;
+}
+#message {
+	display: inline-block;
+	font-size: 75px;
+}
+.message_letter {
+	float: left;
+	background-color: white;
+	color: red;
+	visibility: hidden;
+}
+
+h1 {
+	text-align: center;
+}
+ol {
+	text-align: left;
+}
+#panel{
+	width: 100%;
+	text-align: center;
+}
+#hints {
+	float: left;
+}
+#instructions {
+	clear: both;
+}
+#container {
+	border: 2px dashed red;
+	padding: 20px;
+	display: inline-block;
+}
+.block{
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	border: 2px solid black;
+	margin: -1px;
+	color: black;
+	font-size: 22px;
+	float: left;
+}
+.block .outer {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+.block .inner {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.block[data="true"] {
+	cursor: pointer;
+}
+.block[data="false"] {
+	background-color: black;
+}
+.block[wordselect="true"][select="false"] {
+	background-color: #BFBFFF;
+}
+.block[select="true"] {
+	background-color: yellow;
+}
